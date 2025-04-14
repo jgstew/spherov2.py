@@ -7,6 +7,7 @@ from spherov2.toy import Toy
 from spherov2.toy.bb8 import BB8
 from spherov2.toy.bb9e import BB9E
 from spherov2.toy.bolt import BOLT
+from spherov2.toy.bolt_plus import BOLT_PLUS
 from spherov2.toy.mini import Mini
 from spherov2.toy.ollie import Ollie
 from spherov2.toy.r2d2 import R2D2
@@ -95,4 +96,5 @@ find_R2D2: Callable[..., R2D2] = partial(find_toy, toy_types=[R2D2])
 find_R2Q5: Callable[..., R2Q5] = partial(find_toy, toy_types=[R2Q5])
 find_RVR: Callable[..., RVR] = partial(find_toy, toy_types=[RVR])
 find_BOLT: Callable[..., BOLT] = partial(find_toy, toy_types=[BOLT])
+find_BOLTPLUS: Callable[..., BOLT_PLUS] = partial(find_toy, toy_types=[BOLT_PLUS])
 find_Sprk2: Callable[..., Sprk2] = partial(find_toy, toy_types=[Sprk2])
